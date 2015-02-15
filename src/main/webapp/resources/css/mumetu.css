@@ -1,28 +1,73 @@
 body {
 	background-image: url("#{resource['images:contactsbg2.png']}");
-	background-size:cover;
+	background-size: cover;
 	background-repeat: no-repeat;
 }
+
 .contentGrid tr, .contentGrid td {
 	border: none !important;
-	background-color:transparent;
-	
+	background-color: transparent;
 }
+
 .transBg {
 	background-image: url("#{resource['images:semitransparentsquare.png']}");
 }
+
 .headerTitle {
 	text-align: center;
 }
+
 .contentGrid {
 	margin: 0 auto;
 	margin-top: 10%
 }
+
 .contactsPicture {
-	width:7.2em;
+	width: 7.2em;
 	background-image: url("#{resource['images:contactspicture.png']}");
 }
+
 .linkedinLogo {
-	width:8em;
+	width: 8em;
 	background-image: url("#{resource['images:linkedinlogo.png']}");
+}
+
+/*contacts page*/
+#container {
+	width: 411px;
+	height: auto;
+	margin-top: 8em !important;
+	margin: 0 auto;
+}
+
+#contacttext {
+	float: left;
+	margin: 2px;
+	width: 250px;
+	height: 368px;
+	background-color: gray;
+	border: 1px solid black;
+}
+
+#contactpicture {
+	float: left;
+	margin: 2px;
+	width: auto;
+	height: 14.62em;
+	border: 1px solid black;
+}
+
+#contactlinkedin {
+	float: left;
+	margin: 2px;
+	width: auto;
+	height: auto;
+}
+
+#ownpicture {
+	width: 8em;
+}
+
+#linkedinpicture {
+	width: 9em;
 }
