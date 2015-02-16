@@ -9,19 +9,26 @@
 
 	<ui:define name="content">
 		<div id="container">
-			<div id="contacttext">
-				<h:outputLabel for="name" value="#{msgs.name}"> </h:outputLabel>
+			<div id="contacttext" class="hover">
+				<h:outputLabel for="name" value="#{msgs.name}">
+				</h:outputLabel>
 				<h:outputText id="name" value="#{msgs.ownname}"></h:outputText>
-				
-				
 			</div>
-			<div id="contactpicture">
-				<h:graphicImage id="ownpicture" value="/resources/images/contactspicture.png"></h:graphicImage>
+
+			<div id="contactpicture" class="hover">
+				<h:graphicImage id="ownpicture"
+					value="/resources/images/contactspicture.png"></h:graphicImage>
 			</div>
-			<div id="contactlinkedin">
-				<h:graphicImage id="linkedinpicture" value="/resources/images/linkedinlogo.png"></h:graphicImage>
+
+			<div id="contactlinkedin" class="hover">
+				<a href="https://fi.linkedin.com/in/yacineouarab" target="_blank">
+					<h:graphicImage id="linkedinpicture"
+						value="/resources/images/linkedinlogo.png" />
+				</a>
 			</div>
 		</div>
 	</ui:define>
+	
+	
 
 </ui:composition>
