@@ -1,0 +1,39 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core"
+	template="templates/template.xhtml">
+
+	<ui:define name="headerTitle">#{msgs.projects}</ui:define>
+
+	<ui:define name="content">
+	<h:form>
+		<div id="projectscontainer">
+			<div class="subcontainer" id="leftsubcontainer">
+				<div id="projectmumetu" class="hover smallsquare"></div>
+				<div id="projectvasa" class="hover smallsquare"></div>
+				<div id="projectpeoh" class="hover horizontalrect">
+					<h:graphicImage value="/resources/images/projectaoa.png"></h:graphicImage>
+				</div>
+			</div>
+			<div class="subcontainer" id="rightsubcontainer">
+				<div id="projectass" class="hover verticalrect">
+					<h:graphicImage id="ass" onclick="" value="/resources/images/projectass.png"></h:graphicImage>
+				</div>
+				<div id="projecttpm" class="hover verticalrect">
+					<h:graphicImage id="tpm" value="/resources/images/projecttpm.png"></h:graphicImage>
+				</div>
+			</div>
+		</div>
+		<p:overlayPanel for="ass" showEvent="onclick">
+			<h:graphicImage value="/resources/images/projecttpm.png"></h:graphicImage>
+		</p:overlayPanel>
+		</h:form>
+	</ui:define>
+
+	<ui:define name="overlaypanel">
+		
+	</ui:define>
+
+</ui:composition>
