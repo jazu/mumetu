@@ -1,0 +1,20 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core"
+	template="templates/template.xhtml">
+
+	<ui:define name="headerTitle">#{msgs.cv}</ui:define>
+
+	<ui:define name="content">
+		<div id="pdfcontainer">
+		<object type="application/pdf" data="/Mumetu/resources/ecv.pdf?pfdrid_c=true" id="pdf">
+            Your browser can't display pdf, <a href="/resources/ecv.pdf">click</a> to download pdf instead.
+        </object>
+        </div>
+	</ui:define>
+	
+	
+
+</ui:composition>

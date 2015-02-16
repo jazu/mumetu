@@ -1,3 +1,14 @@
+/*cv page*/
+#pdf {
+	height: 66em;
+	width: 100%;
+}
+
+#pdfcontainer {
+	margin: 0 auto;
+	width: 80%;
+}
+
 /*contacts page*/
 #container {
 	width: 411px;
@@ -85,7 +96,8 @@ body {
 #uparrow {
 	width: 3em;
 	position: absolute;
-	left: 1%; top : 1%;
+	left: 1%;
+	top: 1%;
 	-moz-transform: rotate(-90deg);
 	-webkit-transform: rotate(-90deg);
 	-o-transform: rotate(-90deg);
