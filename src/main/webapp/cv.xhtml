@@ -7,14 +7,30 @@
 
 	<ui:define name="headerTitle">#{msgs.cv}</ui:define>
 
+	<ui:define name="navigation">
+		<div class="navigation">
+			<p:link outcome="contact">
+				<h:graphicImage id="leftarrow" value="/resources/images/arrow.png"></h:graphicImage>
+			</p:link>
+			<p:link outcome="projects">
+				<h:graphicImage id="rightarrow" value="/resources/images/arrow.png"></h:graphicImage>
+			</p:link>
+			<p:link outcome="quickmenu">
+				<h:graphicImage id="uparrow" value="/resources/images/arrow.png"></h:graphicImage>
+			</p:link>
+		</div>
+	</ui:define>
+
 	<ui:define name="content">
 		<div id="pdfcontainer">
-		<object type="application/pdf" data="/Mumetu/resources/ecv.pdf?pfdrid_c=true" id="pdf">
-            Your browser can't display pdf, <a href="/resources/ecv.pdf">click</a> to download pdf instead.
-        </object>
-        </div>
+			<object type="application/pdf"
+				data="/Mumetu/resources/ecv.pdf?pfdrid_c=true" id="pdf">
+				Your browser can't display pdf, <a href="/resources/ecv.pdf">click</a>
+				to download pdf instead.
+			</object>
+		</div>
 	</ui:define>
-	
-	
+
+
 
 </ui:composition>

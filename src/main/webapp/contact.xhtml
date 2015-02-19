@@ -7,6 +7,20 @@
 
 	<ui:define name="headerTitle">#{msgs.contacts}</ui:define>
 
+	<ui:define name="navigation">
+		<div class="navigation">
+			<p:link outcome="projects">
+				<h:graphicImage id="leftarrow" value="/resources/images/arrow.png"></h:graphicImage>
+			</p:link>
+			<p:link outcome="cv">
+				<h:graphicImage id="rightarrow" value="/resources/images/arrow.png"></h:graphicImage>
+			</p:link>
+			<p:link outcome="quickmenu">
+				<h:graphicImage id="uparrow" value="/resources/images/arrow.png"></h:graphicImage>
+			</p:link>
+		</div>
+	</ui:define>
+
 	<ui:define name="content">
 		<div id="container">
 			<div id="contacttext" class="hover">
@@ -28,7 +42,7 @@
 			</div>
 		</div>
 	</ui:define>
-	
-	
+
+
 
 </ui:composition>

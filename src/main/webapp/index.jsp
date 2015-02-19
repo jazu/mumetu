@@ -1,1 +1,1 @@
-<% response.sendRedirect("test.xhtml"); %>
+<% response.sendRedirect("quickmenu.xhtml"); %>

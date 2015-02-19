@@ -7,33 +7,48 @@
 
 	<ui:define name="headerTitle">#{msgs.projects}</ui:define>
 
-	<ui:define name="content">
-	<h:form>
-		<div id="projectscontainer">
-			<div class="subcontainer" id="leftsubcontainer">
-				<div id="projectmumetu" class="hover smallsquare"></div>
-				<div id="projectvasa" class="hover smallsquare"></div>
-				<div id="projectpeoh" class="hover horizontalrect">
-					<h:graphicImage value="/resources/images/projectaoa.png"></h:graphicImage>
-				</div>
-			</div>
-			<div class="subcontainer" id="rightsubcontainer">
-				<div id="projectass" class="hover verticalrect">
-					<h:graphicImage id="ass" onclick="" value="/resources/images/ass.gif"></h:graphicImage>
-				</div>
-				<div id="projecttpm" class="hover verticalrect">
-					<h:graphicImage id="tpm" value="/resources/images/projecttpm.png"></h:graphicImage>
-				</div>
-			</div>
+	<ui:define name="navigation">
+		<div class="navigation">
+			<p:link outcome="cv">
+				<h:graphicImage id="leftarrow" value="/resources/images/arrow.png"></h:graphicImage>
+			</p:link>
+			<p:link outcome="contact">
+				<h:graphicImage id="rightarrow" value="/resources/images/arrow.png"></h:graphicImage>
+			</p:link>
+			<p:link outcome="quickmenu">
+			<h:graphicImage id="uparrow" value="/resources/images/arrow.png"></h:graphicImage>
+			</p:link>
 		</div>
-		<p:overlayPanel for="ass" showEvent="onclick">
-			<h:graphicImage value="/resources/images/projecttpm.png"></h:graphicImage>
-		</p:overlayPanel>
+	</ui:define>
+
+	<ui:define name="content">
+		<h:form>
+			<div id="projectscontainer">
+				<div class="subcontainer" id="leftsubcontainer">
+					<div id="projectmumetu" class="hover smallsquare">
+						<h:graphicImage id="cs1" value="/resources/images/comingsoon.png"></h:graphicImage>
+					</div>
+					<div id="projectvasa" class="hover smallsquare">
+						<h:graphicImage id="cs2" value="/resources/images/comingsoon.png"></h:graphicImage>
+					</div>
+					<div id="projectpeoh" class="hover horizontalrect">
+						<h:graphicImage value="/resources/images/projectaoa.png"></h:graphicImage>
+					</div>
+				</div>
+				<div class="subcontainer" id="rightsubcontainer">
+					<div id="projectass" class="hover verticalrect">
+						<h:graphicImage id="ass" onclick="PF('assvar').show();"
+							value="/resources/images/ass.gif"></h:graphicImage>
+					</div>
+					<div id="projecttpm" class="hover verticalrect">
+						<h:graphicImage id="tpm" value="/resources/images/projecttpm.png"></h:graphicImage>
+					</div>
+				</div>
+			</div>
+			<p:dialog showHeader="true" widgetVar="assvar" resizable="false"
+				draggable="false">
+				<h:graphicImage id="test" value="/resources/images/projecttpm.png"></h:graphicImage>
+			</p:dialog>
 		</h:form>
 	</ui:define>
-
-	<ui:define name="overlaypanel">
-		
-	</ui:define>
-
 </ui:composition>
