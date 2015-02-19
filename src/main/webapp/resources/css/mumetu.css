@@ -153,3 +153,9 @@ body {
 	-ms-transform: rotate(-90deg);
 	top: 1%;
 }
+
+/*Primeface component overrides*/
+.ui-ring-item{
+	width:200px !important;
+	height:75px !important;
+}

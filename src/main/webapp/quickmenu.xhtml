@@ -4,13 +4,17 @@
 	xmlns:p="http://primefaces.org/ui"
 	xmlns:f="http://java.sun.com/jsf/core"
 	template="templates/template.xhtml">
-
 	<ui:define name="headerTitle">#{msgs.quickmenu}</ui:define>
 
 	<ui:define name="content">
-		
+		<p:ring id="menu" value="#{ring.pages}" var="page"
+			easing="easeInOutBack">
+			<p:link outcome="#{page}">
+				<p:graphicImage id="pageimg" value="/resources/images/#{page}.png" />
+			</p:link>
+		</p:ring>
 	</ui:define>
-	
-	
+
+
 
 </ui:composition>
