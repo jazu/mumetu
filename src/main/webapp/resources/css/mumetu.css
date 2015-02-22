@@ -163,6 +163,7 @@
 
 #linkedinpicture {
 	width: 9em;
+	border: none;
 }
 
 /*global styles*/
@@ -210,6 +211,7 @@ body {
 	-webkit-transform: rotate(180deg);
 	-o-transform: rotate(180deg);
 	-ms-transform: rotate(180deg);
+	border: none;
 }
 
 #rightarrow {
@@ -217,6 +219,7 @@ body {
 	right: 1%;
 	position: absolute;
 	margin-top: 15em;
+	border: none;
 }
 
 #uparrow {
@@ -229,6 +232,7 @@ body {
 	-o-transform: rotate(-90deg);
 	-ms-transform: rotate(-90deg);
 	top: 1%;
+	border: none;
 }
 
 /*Primeface component overrides*/
