@@ -10,7 +10,8 @@
 		<p:ring id="menu" value="#{ring.pages}" var="page"
 			easing="easeInOutBack">
 			<p:link outcome="#{page}">
-				<p:graphicImage id="pageimg" value="/resources/images/#{page}.png" />
+				#{msgs[page]}
+				<h:graphicImage styleClass="ringimg" value="/resources/images/#{page}.png"></h:graphicImage>
 			</p:link>
 		</p:ring>
 	</ui:define>

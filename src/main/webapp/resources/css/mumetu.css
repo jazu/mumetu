@@ -1,3 +1,9 @@
+/*Quickmenu page*/
+.ringimg {
+	width: 100%;
+	height: 87%;
+}
+
 /*Projects page*/
 .dialogimg {
 	width: 120px !important;
@@ -12,12 +18,22 @@
 .assdialogcontentbg {
 	background-image: url("#{resource['images:assbg.png']}");
 }
+
 .tpmdialogcontentbg {
 	background-image: url("#{resource['images:tpmbg.png']}");
 }
+
 .aoadialogcontentbg {
 	background-image: url("#{resource['images:aoabg.png']}");
 }
+
+.contactcontentnbg {
+	background-image: url("#{resource['images:contactbg.png']}");
+}
+.mumetudialogcontentbg {
+	background-image: url("#{resource['images:mumetubg.png']}");
+}
+
 .dialogcontent {
 	width: 530px;
 	height: 400px;
@@ -113,7 +129,7 @@
 	margin: 2px;
 	width: 250px;
 	height: 368px;
-	background-color: gray;
+	background-color: white;
 	border: 1px solid black;
 }
 
@@ -130,6 +146,15 @@
 	margin: 2px;
 	width: auto;
 	height: auto;
+}
+
+.contactcontentnbg span {
+	text-align: center;
+    position: relative;
+    top: 80%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 #ownpicture {
@@ -149,6 +174,10 @@
 	vertical-align: top;
 }
 
+.textmiddle {
+	vertical-align: middle;
+}
+
 .hover:hover {
 	transform: scale(1.02, 1.02);
 	-webkit-transform: scale(1.02, 1.02);
@@ -158,9 +187,7 @@
 }
 
 body {
-	background-image: url("#{resource['images:contactsbg2.png']}");
-	background-size: cover;
-	background-repeat: no-repeat;
+	background-image: url("#{resource['images:bg.jpg']}");
 }
 
 .transBg {
@@ -206,8 +233,26 @@ body {
 
 /*Primeface component overrides*/
 .ui-ring-item {
+	width: 150px !important;
+	height: 100px !important;
+}
+
+.ui-ring-item-focus {
 	width: 200px !important;
-	height: 75px !important;
+	height: 150px !important;
+}
+
+.ui-ring {
+	width: 95% !important;
+	margin: 0px auto !important;
+	top: 8em; 
+	text-align:center;
+	-webkit-margin-before : 0px !important;
+	-webkit-margin-after: 0px !important;
+	-webkit-margin-start: 0px !important;
+	-webkit-margin-end: 0px !important;
+	-webkit-padding-start: 0px !important;
+	-webkit-margin-before: 0px !important;
 }
 
 .ui-dialog-content {

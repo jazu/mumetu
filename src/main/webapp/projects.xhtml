@@ -26,7 +26,7 @@
 			<div id="projectscontainer">
 				<div class="subcontainer" id="leftsubcontainer">
 					<div id="projectmumetu" class="hover smallsquare">
-						<h:graphicImage id="cs1" value="/resources/images/comingsoon.png"></h:graphicImage>
+						<h:graphicImage id="cs1" onclick="PF('mumetuvar').show();" value="/resources/images/projectmumetu.png"></h:graphicImage>
 					</div>
 					<div id="projectvasa" class="hover smallsquare">
 						<h:graphicImage id="cs2" value="/resources/images/comingsoon.png"></h:graphicImage>
@@ -80,7 +80,7 @@
 							<h3>#{msgs.desc}</h3>
 							<span>#{msgs.assdesc1}</span>
 							<h3>#{msgs.technologiesused}</h3>
-							<span>#{msgs.assdesc2}</span>
+							<span>#{msgs.assdesc2}<a href="https://github.com/jazu/gl1/"> Git</a></span>
 						</p:column>
 					</p:row>
 					<p:row>
@@ -149,7 +149,7 @@
 							<h3>#{msgs.desc}</h3>
 							<span>#{msgs.tpmdesc1}</span>
 							<h3>#{msgs.technologiesused}</h3>
-							<span>#{msgs.tpmdesc2}</span>
+							<span>#{msgs.tpmdesc2} <a href="https://github.com/jazu/tikkusoftwares2"> Git</a></span>
 						</p:column>
 					</p:row>
 					<p:row>
@@ -216,7 +216,7 @@
 							<h3>#{msgs.desc}</h3>
 							<span>#{msgs.aoadesc1}</span>
 							<h3>#{msgs.technologiesused}</h3>
-							<span>#{msgs.aoadesc2}</span>
+							<span>#{msgs.aoadesc2} <a href="https://github.com/jazu/aoa"> Git</a></span>
 						</p:column>
 					</p:row>
 					<p:row>
@@ -252,6 +252,77 @@
 										value="https://www.youtube.com/v/SoISDkEmBfU"
 										width="400" height="225" player="flash" />
 								</f:facet>
+							</p:lightBox>
+						</p:column>
+					</p:row>
+				</p:panelGrid>
+			</p:dialog>
+		
+				<p:dialog id="mumetudialog" styleClass="dialog" showHeader="true"
+				widgetVar="mumetuvar" resizable="false" draggable="false">
+				<p:panelGrid styleClass="dialogpanelgrid">
+					<p:row>
+						<p:column>
+							<p:lightBox>
+								<h:outputLink
+									value="#{resource['images:cv.png']}">
+									<h:graphicImage styleClass="dialogimg"
+										value="/resources/images/cv.png" />
+								</h:outputLink>
+							</p:lightBox>
+						</p:column>
+						<p:column styleClass="textcenter">
+							<h3>#{msgs.mumetu}</h3>
+
+						</p:column>
+					</p:row>
+					<p:row>
+						<p:column>
+							<p:lightBox>
+								<h:outputLink
+									value="#{resource['images:contact.png']}">
+									<h:graphicImage styleClass="dialogimg"
+										value="/resources/images/contact.png" />
+								</h:outputLink>
+							</p:lightBox>
+						</p:column>
+						<p:column styleClass="dialogcontent mumetudialogcontentbg texttop"
+							colspan="2" rowspan="4">
+							<h3>#{msgs.desc}</h3>
+							<span>#{msgs.mumetudesc1}</span>
+							<h3>#{msgs.technologiesused}</h3>
+							<span>#{msgs.mumetudesc2}<a href="https://github.com/jazu/mumetu/"> Git</a></span>
+						</p:column>
+					</p:row>
+					<p:row>
+						<p:column>
+							<p:lightBox>
+								<h:outputLink
+									value="#{resource['images:projects.png']}">
+									<h:graphicImage styleClass="dialogimg"
+										value="/resources/images/projects.png" />
+								</h:outputLink>
+							</p:lightBox>
+						</p:column>
+					</p:row>
+					<p:row>
+						<p:column>
+							<p:lightBox>
+								<h:outputLink
+									value="#{resource['images:quickmenu.png']}">
+									<h:graphicImage styleClass="dialogimg"
+										value="/resources/images/quickmenu.png" />
+								</h:outputLink>
+							</p:lightBox>
+						</p:column>
+					</p:row>
+					<p:row>
+						<p:column>
+							<p:lightBox>
+								<h:outputLink value="#{resource['images:mumetu1.png']}">
+									<h:graphicImage styleClass="dialogimg"
+										value="/resources/images/mumetu1.png"></h:graphicImage>
+								</h:outputLink>
 							</p:lightBox>
 						</p:column>
 					</p:row>
