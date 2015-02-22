@@ -16,7 +16,7 @@
 				<h:graphicImage id="rightarrow" value="/resources/images/arrow.png"></h:graphicImage>
 			</p:link>
 			<p:link outcome="quickmenu">
-			<h:graphicImage id="uparrow" value="/resources/images/arrow.png"></h:graphicImage>
+				<h:graphicImage id="uparrow" value="/resources/images/arrow.png"></h:graphicImage>
 			</p:link>
 		</div>
 	</ui:define>
@@ -32,7 +32,8 @@
 						<h:graphicImage id="cs2" value="/resources/images/comingsoon.png"></h:graphicImage>
 					</div>
 					<div id="projectpeoh" class="hover horizontalrect">
-						<h:graphicImage value="/resources/images/projectaoa.png"></h:graphicImage>
+						<h:graphicImage onclick="PF('aoavar').show();"
+							value="/resources/images/projectaoa.png"></h:graphicImage>
 					</div>
 				</div>
 				<div class="subcontainer" id="rightsubcontainer">
@@ -41,13 +42,220 @@
 							value="/resources/images/ass.gif"></h:graphicImage>
 					</div>
 					<div id="projecttpm" class="hover verticalrect">
-						<h:graphicImage id="tpm" value="/resources/images/projecttpm.png"></h:graphicImage>
+						<h:graphicImage id="tpm" onclick="PF('tpmvar').show();"
+							value="/resources/images/projecttpm.png"></h:graphicImage>
 					</div>
 				</div>
 			</div>
-			<p:dialog showHeader="true" widgetVar="assvar" resizable="false"
-				draggable="false">
-				<h:graphicImage id="test" value="/resources/images/projecttpm.png"></h:graphicImage>
+			<p:dialog id="assdialog" styleClass="dialog" showHeader="true"
+				widgetVar="assvar" resizable="false" draggable="false">
+				<p:panelGrid styleClass="dialogpanelgrid">
+					<p:row>
+						<p:column>
+							<p:lightBox>
+								<h:outputLink
+									value="https://lh4.ggpht.com/WRxHS1gVdlwXBATbsZBejc7hRLj5tZ9QCLj85d_BqFMxyy-MEAF5E8mxqRkcNMf84Ko=h310-rw">
+									<h:graphicImage styleClass="dialogimg"
+										value="https://lh4.ggpht.com/WRxHS1gVdlwXBATbsZBejc7hRLj5tZ9QCLj85d_BqFMxyy-MEAF5E8mxqRkcNMf84Ko=h310-rw" />
+								</h:outputLink>
+							</p:lightBox>
+						</p:column>
+						<p:column styleClass="textcenter">
+							<h3>#{msgs.ass}</h3>
+
+						</p:column>
+					</p:row>
+					<p:row>
+						<p:column>
+							<p:lightBox>
+								<h:outputLink
+									value="https://lh5.ggpht.com/6EBhg0EXXvzJe9T50aCG6rCdD2YgvnETGDxMfJMId5pFyqrZYatP1AChjFDfMwAQcb8=h310-rw">
+									<h:graphicImage styleClass="dialogimg"
+										value="https://lh5.ggpht.com/6EBhg0EXXvzJe9T50aCG6rCdD2YgvnETGDxMfJMId5pFyqrZYatP1AChjFDfMwAQcb8=h310-rw" />
+								</h:outputLink>
+							</p:lightBox>
+						</p:column>
+						<p:column styleClass="dialogcontent assdialogcontentbg texttop"
+							colspan="2" rowspan="4">
+							<h3>#{msgs.desc}</h3>
+							<span>#{msgs.assdesc1}</span>
+							<h3>#{msgs.technologiesused}</h3>
+							<span>#{msgs.assdesc2}</span>
+						</p:column>
+					</p:row>
+					<p:row>
+						<p:column>
+							<p:lightBox>
+								<h:outputLink
+									value="https://lh3.ggpht.com/8gnZSTw61g_DogXKOFBDGSikHo8SbVg-rpOfkNR_utMkSx2ep6NwbE6I41D7qUtXVcXv=h900-rw">
+									<h:graphicImage styleClass="dialogimg"
+										value="https://lh3.ggpht.com/8gnZSTw61g_DogXKOFBDGSikHo8SbVg-rpOfkNR_utMkSx2ep6NwbE6I41D7qUtXVcXv=h900-rw" />
+								</h:outputLink>
+							</p:lightBox>
+						</p:column>
+					</p:row>
+					<p:row>
+						<p:column>
+							<p:lightBox>
+								<h:outputLink
+									value="https://lh4.ggpht.com/WRxHS1gVdlwXBATbsZBejc7hRLj5tZ9QCLj85d_BqFMxyy-MEAF5E8mxqRkcNMf84Ko=h310-rw">
+									<h:graphicImage styleClass="dialogimg"
+										value="/resources/images/assqr.png" />
+								</h:outputLink>
+							</p:lightBox>
+						</p:column>
+					</p:row>
+					<p:row>
+						<p:column>
+							<p:lightBox>
+								<h:outputLink value="#{resource['images:assqr.png']}">
+									<h:graphicImage styleClass="dialogimg"
+										value="/resources/images/assqr.png"></h:graphicImage>
+								</h:outputLink>
+							</p:lightBox>
+						</p:column>
+					</p:row>
+				</p:panelGrid>
+			</p:dialog>
+
+			<p:dialog id="tpmdialog" styleClass="dialog" showHeader="true"
+				widgetVar="tpmvar" resizable="false" draggable="false">
+				<p:panelGrid styleClass="dialogpanelgrid">
+					<p:row>
+						<p:column>
+							<p:lightBox>
+								<h:outputLink value="#{resource['images:tpm1.png']}">
+									<h:graphicImage styleClass="dialogimg"
+										value="/resources/images/tpm1.png" />
+								</h:outputLink>
+							</p:lightBox>
+						</p:column>
+						<p:column styleClass="textcenter">
+							<h3>#{msgs.tpm}</h3>
+
+						</p:column>
+					</p:row>
+					<p:row>
+						<p:column>
+							<p:lightBox>
+								<h:outputLink value="#{resource['images:tpm2.png']}">
+									<h:graphicImage styleClass="dialogimg"
+										value="/resources/images/tpm2.png" />
+								</h:outputLink>
+							</p:lightBox>
+						</p:column>
+						<p:column styleClass="dialogcontent tpmdialogcontentbg texttop"
+							colspan="2" rowspan="4">
+							<h3>#{msgs.desc}</h3>
+							<span>#{msgs.tpmdesc1}</span>
+							<h3>#{msgs.technologiesused}</h3>
+							<span>#{msgs.tpmdesc2}</span>
+						</p:column>
+					</p:row>
+					<p:row>
+						<p:column>
+							<p:lightBox>
+								<h:outputLink value="#{resource['images:tpm3.png']}">
+									<h:graphicImage styleClass="dialogimg"
+										value="/resources/images/tpm3.png" />
+								</h:outputLink>
+							</p:lightBox>
+						</p:column>
+					</p:row>
+					<p:row>
+						<p:column>
+							<p:lightBox>
+								<h:outputLink value="#{resource['images:tpm4.png']}">
+									<h:graphicImage styleClass="dialogimg"
+										value="/resources/images/tpm4.png" />
+								</h:outputLink>
+							</p:lightBox>
+						</p:column>
+					</p:row>
+					<p:row>
+						<p:column>
+							<p:lightBox>
+								<h:outputLink value="#{resource['images:tpm5.png']}">
+									<h:graphicImage styleClass="dialogimg"
+										value="/resources/images/tpm5.png"></h:graphicImage>
+								</h:outputLink>
+							</p:lightBox>
+						</p:column>
+					</p:row>
+				</p:panelGrid>
+			</p:dialog>
+
+			<p:dialog id="aoadialog" styleClass="dialog" showHeader="true"
+				widgetVar="aoavar" resizable="false" draggable="false">
+				<p:panelGrid styleClass="dialogpanelgrid">
+					<p:row>
+						<p:column>
+							<p:lightBox>
+								<h:outputLink value="#{resource['images:aoa1.png']}">
+									<h:graphicImage styleClass="dialogimg"
+										value="/resources/images/aoa1.png" />
+								</h:outputLink>
+							</p:lightBox>
+						</p:column>
+						<p:column styleClass="textcenter">
+							<h3>#{msgs.aoa}</h3>
+
+						</p:column>
+					</p:row>
+					<p:row>
+						<p:column>
+							<p:lightBox>
+								<h:outputLink value="#{resource['images:aoa2.png']}">
+									<h:graphicImage styleClass="dialogimg"
+										value="/resources/images/aoa2.png" />
+								</h:outputLink>
+							</p:lightBox>
+						</p:column>
+						<p:column styleClass="dialogcontent aoadialogcontentbg texttop"
+							colspan="2" rowspan="4">
+							<h3>#{msgs.desc}</h3>
+							<span>#{msgs.aoadesc1}</span>
+							<h3>#{msgs.technologiesused}</h3>
+							<span>#{msgs.aoadesc2}</span>
+						</p:column>
+					</p:row>
+					<p:row>
+						<p:column>
+							<p:lightBox>
+								<h:outputLink value="#{resource['images:aoa3.png']}">
+									<h:graphicImage styleClass="dialogimg"
+										value="/resources/images/aoa3.png" />
+								</h:outputLink>
+							</p:lightBox>
+						</p:column>
+					</p:row>
+					<p:row>
+						<p:column>
+							<p:lightBox>
+								<h:outputLink value="#{resource['images:aoa4.png']}">
+									<h:graphicImage styleClass="dialogimg"
+										value="/resources/images/aoa4.png" />
+								</h:outputLink>
+							</p:lightBox>
+						</p:column>
+					</p:row>
+					<p:row>
+						<p:column>
+							<p:lightBox>
+								<h:outputLink value="#">
+									<h:graphicImage styleClass="dialogimg"
+										value="/resources/images/videothumbnail.png" />
+								</h:outputLink>
+
+								<f:facet name="inline">
+									<p:media
+										value="https://www.youtube.com/v/SoISDkEmBfU"
+										width="400" height="225" player="flash" />
+								</f:facet>
+							</p:lightBox>
+						</p:column>
+					</p:row>
+				</p:panelGrid>
 			</p:dialog>
 		</h:form>
 	</ui:define>

@@ -1,4 +1,41 @@
 /*Projects page*/
+.dialogimg {
+	width: 120px !important;
+	height: 70px !important;
+}
+
+.dialogheader {
+	width: 530px;
+	height: 70px;
+}
+
+.assdialogcontentbg {
+	background-image: url("#{resource['images:assbg.png']}");
+}
+.tpmdialogcontentbg {
+	background-image: url("#{resource['images:tpmbg.png']}");
+}
+.aoadialogcontentbg {
+	background-image: url("#{resource['images:aoabg.png']}");
+}
+.dialogcontent {
+	width: 530px;
+	height: 400px;
+}
+
+.dialogpanelgrid tr {
+	border-style: none !important;
+}
+
+.dialogpanelgrid tr td {
+	border-style: none !important;
+}
+
+.dialog {
+	width: 693px !important;
+	height: 526px !important;
+}
+
 .smallsquare {
 	background-color: black;
 	width: 150px;
@@ -25,23 +62,28 @@
 	border: 1px solid black;
 	margin: 2px;
 }
+
 #projectscontainer {
 	width: 624px;
 	height: auto;
 	margin-top: 8em !important;
 	margin: 0 auto;
 }
+
 .subcontainer {
 	width: 312px;
 	height: auto;
 	margin: 0 auto;
 }
+
 #leftsubcontainer {
-	float:left;
+	float: left;
 }
+
 #rightsubcontainer {
-	float:right;
+	float: right;
 }
+
 #projectpeoh {
 	width: 306px !important;
 	height: 144px !important;
@@ -99,6 +141,14 @@
 }
 
 /*global styles*/
+.textcenter {
+	text-align: center;
+}
+
+.texttop {
+	vertical-align: top;
+}
+
 .hover:hover {
 	transform: scale(1.02, 1.02);
 	-webkit-transform: scale(1.02, 1.02);
@@ -155,7 +205,19 @@ body {
 }
 
 /*Primeface component overrides*/
-.ui-ring-item{
-	width:200px !important;
-	height:75px !important;
+.ui-ring-item {
+	width: 200px !important;
+	height: 75px !important;
+}
+
+.ui-dialog-content {
+	padding: 0 !important;
+}
+
+.ui-lightbox-nav-right {
+	visibility: hidden !important;
+}
+
+.ui-lightbox-nav-left {
+	visibility: hidden !important;
 }
