@@ -8,18 +8,19 @@
 <h:head>
 	<h:outputStylesheet library="css" name="mumetu.css" />
 	<title><ui:insert name="title">#{msgs.sitetitle}</ui:insert></title>
+	<f:event type="preRenderView" listener="#{ring.growl}" />
 </h:head>
 
 <h:body>
-	
+	<p:growl id="growl" />
 	<h1 class="headerTitle">
 		<ui:insert name="headerTitle"></ui:insert>
 	</h1>
 
 	<ui:insert name="navigation">
-	
+
 	</ui:insert>
-	
+
 	<ui:insert name="content"></ui:insert>
 
 </h:body>

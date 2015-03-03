@@ -22,11 +22,13 @@
 	</ui:define>
 
 	<ui:define name="content">
+
 		<h:form>
 			<div id="projectscontainer">
 				<div class="subcontainer" id="leftsubcontainer">
 					<div id="projectmumetu" class="hover smallsquare">
-						<h:graphicImage id="cs1" onclick="PF('mumetuvar').show();" value="/resources/images/projectmumetu.png"></h:graphicImage>
+						<h:graphicImage id="cs1" onclick="PF('mumetuvar').show();"
+							value="/resources/images/projectmumetu.png"></h:graphicImage>
 					</div>
 					<div id="projectvasa" class="hover smallsquare">
 						<h:graphicImage id="cs2" value="/resources/images/comingsoon.png"></h:graphicImage>
@@ -80,7 +82,8 @@
 							<h3>#{msgs.desc}</h3>
 							<span>#{msgs.assdesc1}</span>
 							<h3>#{msgs.technologiesused}</h3>
-							<span>#{msgs.assdesc2}<a href="https://github.com/jazu/gl1/"> Git</a></span>
+							<span>#{msgs.assdesc2}<a
+								href="https://github.com/jazu/gl1/"> Git</a></span>
 						</p:column>
 					</p:row>
 					<p:row>
@@ -98,9 +101,9 @@
 						<p:column>
 							<p:lightBox>
 								<h:outputLink
-									value="https://lh4.ggpht.com/WRxHS1gVdlwXBATbsZBejc7hRLj5tZ9QCLj85d_BqFMxyy-MEAF5E8mxqRkcNMf84Ko=h310-rw">
+									value="#{resource['images:asstotalinstalls.png']}">
 									<h:graphicImage styleClass="dialogimg"
-										value="/resources/images/assqr.png" />
+										value="/resources/images/asstotalinstalls.png" />
 								</h:outputLink>
 							</p:lightBox>
 						</p:column>
@@ -149,7 +152,8 @@
 							<h3>#{msgs.desc}</h3>
 							<span>#{msgs.tpmdesc1}</span>
 							<h3>#{msgs.technologiesused}</h3>
-							<span>#{msgs.tpmdesc2} <a href="https://github.com/jazu/tikkusoftwares2"> Git</a></span>
+							<span>#{msgs.tpmdesc2} <a
+								href="https://github.com/jazu/tikkusoftwares2"> Git</a></span>
 						</p:column>
 					</p:row>
 					<p:row>
@@ -216,7 +220,8 @@
 							<h3>#{msgs.desc}</h3>
 							<span>#{msgs.aoadesc1}</span>
 							<h3>#{msgs.technologiesused}</h3>
-							<span>#{msgs.aoadesc2} <a href="https://github.com/jazu/aoa"> Git</a></span>
+							<span>#{msgs.aoadesc2} <a
+								href="https://github.com/jazu/aoa"> Git</a></span>
 						</p:column>
 					</p:row>
 					<p:row>
@@ -248,8 +253,7 @@
 								</h:outputLink>
 
 								<f:facet name="inline">
-									<p:media
-										value="https://www.youtube.com/v/SoISDkEmBfU"
+									<p:media value="https://www.youtube.com/v/SoISDkEmBfU"
 										width="400" height="225" player="flash" />
 								</f:facet>
 							</p:lightBox>
@@ -257,15 +261,14 @@
 					</p:row>
 				</p:panelGrid>
 			</p:dialog>
-		
-				<p:dialog id="mumetudialog" styleClass="dialog" showHeader="true"
+
+			<p:dialog id="mumetudialog" styleClass="dialog" showHeader="true"
 				widgetVar="mumetuvar" resizable="false" draggable="false">
 				<p:panelGrid styleClass="dialogpanelgrid">
 					<p:row>
 						<p:column>
 							<p:lightBox>
-								<h:outputLink
-									value="#{resource['images:cv.png']}">
+								<h:outputLink value="#{resource['images:cv.png']}">
 									<h:graphicImage styleClass="dialogimg"
 										value="/resources/images/cv.png" />
 								</h:outputLink>
@@ -279,8 +282,7 @@
 					<p:row>
 						<p:column>
 							<p:lightBox>
-								<h:outputLink
-									value="#{resource['images:contact.png']}">
+								<h:outputLink value="#{resource['images:contact.png']}">
 									<h:graphicImage styleClass="dialogimg"
 										value="/resources/images/contact.png" />
 								</h:outputLink>
@@ -291,14 +293,14 @@
 							<h3>#{msgs.desc}</h3>
 							<span>#{msgs.mumetudesc1}</span>
 							<h3>#{msgs.technologiesused}</h3>
-							<span>#{msgs.mumetudesc2}<a href="https://github.com/jazu/mumetu/"> Git</a></span>
+							<span>#{msgs.mumetudesc2}<a
+								href="https://github.com/jazu/mumetu/"> Git</a></span>
 						</p:column>
 					</p:row>
 					<p:row>
 						<p:column>
 							<p:lightBox>
-								<h:outputLink
-									value="#{resource['images:projects.png']}">
+								<h:outputLink value="#{resource['images:projects.png']}">
 									<h:graphicImage styleClass="dialogimg"
 										value="/resources/images/projects.png" />
 								</h:outputLink>
@@ -308,8 +310,7 @@
 					<p:row>
 						<p:column>
 							<p:lightBox>
-								<h:outputLink
-									value="#{resource['images:quickmenu.png']}">
+								<h:outputLink value="#{resource['images:quickmenu.png']}">
 									<h:graphicImage styleClass="dialogimg"
 										value="/resources/images/quickmenu.png" />
 								</h:outputLink>

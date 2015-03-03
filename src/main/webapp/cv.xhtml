@@ -24,9 +24,10 @@
 	<ui:define name="content">
 		<div id="pdfcontainer">
 			<object type="application/pdf"
-				data="/Mumetu/resources/ecv.pdf?pfdrid_c=true" id="pdf">
-				Your browser can't display pdf, <a href="/resources/ecv.pdf">click</a>
-				to download pdf instead.
+				data="/resources/ecv.pdf?pfdrid_c=true" id="pdf">
+				<!-- PDF toimii localhostilla kun data="/Mumetu/resources/......" 
+				Serverilla alkuliite "/Mumetu" otetaan pois-->
+				<span class="pdfalternative"><a href="/resources/ecv.pdf">#{msgs.clicktodownloadpdf}</a></span>
 			</object>
 		</div>
 	</ui:define>

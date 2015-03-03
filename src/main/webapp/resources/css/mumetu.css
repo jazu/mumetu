@@ -30,6 +30,7 @@
 .contactcontentnbg {
 	background-image: url("#{resource['images:contactbg.png']}");
 }
+
 .mumetudialogcontentbg {
 	background-image: url("#{resource['images:mumetubg.png']}");
 }
@@ -106,6 +107,15 @@
 }
 
 /*cv page*/
+.pdfalternative a {
+	color: white;
+	text-transform: uppercase;
+	position: absolute;
+	margin-top: 15em;
+	width: 80%;
+	text-align: center;
+}
+
 #pdf {
 	height: 66em;
 	width: 100%;
@@ -150,11 +160,11 @@
 
 .contactcontentnbg span {
 	text-align: center;
-    position: relative;
-    top: 80%;
-    -ms-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+	position: relative;
+	top: 80%;
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
 
 #ownpicture {
@@ -249,9 +259,9 @@ body {
 .ui-ring {
 	width: 95% !important;
 	margin: 0px auto !important;
-	top: 8em; 
-	text-align:center;
-	-webkit-margin-before : 0px !important;
+	top: 8em;
+	text-align: center;
+	-webkit-margin-before: 0px !important;
 	-webkit-margin-after: 0px !important;
 	-webkit-margin-start: 0px !important;
 	-webkit-margin-end: 0px !important;
